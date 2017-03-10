@@ -1,0 +1,106 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+.clearfix::after
+	content: ""
+	display: table
+	clear: both
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.main
+	height: 100vh
+.header__content
+	text-align: center
+	margin-top: 180px
+.header__title
+	font-family: "Exo-Thin" , sans-serif
+	font-size: em(60px)
+	line-height: 75px
+	color: #282828
+	padding: 0 4px
+	margin-bottom: 40px
+.key__wrap
+	text-align: center
+	margin-bottom: 30px
+.header__key
+	display: inline-block
+	height: 60px
+	width: 60px
+	border-radius: 50%
+	background: #8185a3
+	position: relative
+	&::after
+		content: ""
+		position: absolute
+		width: 20px
+		height: 20px
+		background: url(../img/Polygon1.png) no-repeat
+		top: 21px
+		left: 23px
+	&:hover
+		box-shadow: 0 0 25px $main-color
+.btn
+	display: inline-block
+	border-radius: 5px
+	text-decoration: none
+	color: #fff
+	text-transform: uppercase
+	background: $main-color
+	&:focus
+		text-decoration: none
+		color: #fff
+	&:hover
+		text-decoration: none
+		color: #fff
+.header--btn
+	padding: 15px 62px
+.header__text
+	font-size: em(14px)
+	color: #282828
+	opacity: .6
+.design
+	height: 725px
+@import "media" // Всегда в конце
