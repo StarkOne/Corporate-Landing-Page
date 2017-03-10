@@ -1,5 +1,5 @@
 $(function() {
 
-	$('.parallax-window').parallax({imageSrc: '../img/header.jpg'});
+	$('.parallax-window').parallax({imageSrc: '/img/header.jpg'});
 
 });
