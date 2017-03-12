@@ -4,6 +4,53 @@
 @import "vars"
 
 .card
-	height: 650px
 	background: url(../img/Group41.png) no-repeat
 	background-size: cover
+	padding: 100px 0px 85px
+.card__item
+ text-align: center
+ margin-bottom: 60px
+.card__photo-wrap
+	margin-bottom: 20px
+.photo
+	display: inline-block
+	width: 75px
+	height: 75px
+	background: #4e4e5e
+.card__name
+	font-family: "Exo-Medium", sans-serif
+	font-size: em(22px)
+	color: #fff
+	letter-spacing: 1px
+	margin: 0
+	padding: 0
+.card__desc
+	margin-top: 5px
+	font-family: "Exo-Medium", sans-serif
+	font-size: em(16px)
+	color: $main-color
+	margin-bottom: 20px
+.card__text
+	font-family: "Exo-Italic", sans-serif
+	color: #fff
+.compani
+	display: block
+	background: url(../img/partnerlogo.png) no-repeat
+	width: 160px
+	height: 90px
+	transition: all .3s
+	opacity: .5
+	&:hover
+		opacity: 1
+.compani--1
+	background-position: 39px 0
+.compani--2
+	background-position: -181px 0
+.compani--3
+	background-position: -394px 0
+.compani--4
+	background-position: -613px 0
+.compani--5
+	background-position: -824px 0
+.card__compani-item
+	margin-bottom: 20px
